@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ElianTrans.MainPage"
+             BackgroundColor="Black"
+             >
+       
+
+    <StackLayout >
+      
+        <Label Text="Elian Script" 
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+
+        <Label Text="The Elian Script is the creation of C. C. Elian. It began as code by which Claudine could, at a glance, differentiate writings in her notebooks that were in finished form from those still in the works. Over time it has developed into a form of calligraphy." 
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Start"/>
+
+        <Image Source="https://omniglot.com/images/writing/elian1.gif" />
+
+        <Label Text="By then takin the surrounding lines of each letter we can write in Elian script."
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="For any letters that would be the same we can add extra"
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="Such as longer lines or accents etc."
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="Numbers can then be done in the fashion of Roman Numerals."
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+
+
+        <Label Text="Please Enter the letter to translate"
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+
+        <Entry x:Name="Translate"  PlaceholderColor="White"
+               BackgroundColor="Gray"
+               HorizontalOptions="CenterAndExpand"
+               VerticalTextAlignment="Start"
+               ReturnType="Send"/>
+
+        <Button Text="Translate"
+                TextColor="White"
+                BorderColor="Gray"
+                AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Clicked="Button_Clicked"/>
+
+        <Label x:Name="Trans"
+               Text=""
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               />
+
+        <Label Text="Previously translated:"
+               TextColor="White"
+               VerticalTextAlignment="Start"
+               />
+        <Label x:Name="savedLex"
+               Text=""
+                FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+              AbsoluteLayout.LayoutFlags="PositionProportional"
+               />
+        <Label x:Name="saved"
+               Text=""
+                FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+              AbsoluteLayout.LayoutFlags="PositionProportional"
+               />
+
+
+    </StackLayout>
+
+</ContentPage>
