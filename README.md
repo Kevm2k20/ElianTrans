@@ -1,4 +1,5 @@
 # ElianTrans
+G00367608
 This application takes in user imput of a single character 
 in order to translate it into Elian script
 This was easier than taking in entire strings and i think better as 
